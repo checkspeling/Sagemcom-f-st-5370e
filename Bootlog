@@ -1,0 +1,1317 @@
+D%G----
+BTRM
+V1.6
+PMCS
+AFEL
+PWRZ
+MEML
+PMCD
+MEMP
+CODE
+ZBSS
+MAIN
+CACH
+OTP?
+OTPP
+ROTB
+SCBT
+NAND
+IMG?
+IMGL
+HDR?
+HDRP
+MCV?
+KEY?
+KEYA
+MID?
+MIDP
+MCVA
+SBI?
+SBIA
+PASS
+----
+HELO
+CPU0
+PMCM
+PMCS
+PMCD
+CODE
+L1CD
+MMUI
+ZBBS
+MAIN
+5.0204-1.0.38-162.76
+Boot Strap Register:  0x7dfffc2f
+DRAM
+NVRAM memcfg 0x427
+MCB chksum 0xf67f5b05
+DDR3-1600 CL11 512MB
+PASS
+Version cfe-rom: 0.14.12-sec
+FPS0
+KEY1
+BTL?
+BTLA
+PASS
+J2EP
+
+
+Base: 5.2_04
+CFE version 1.0.38-162.76 for BCM963138 (32bit,SP,LE)
+Build Date: mardi 7 août 2018, 13:54:07 (UTC+0200) (g601671@rmm-p200156.femto.urd1.local)
+Copyright (C) 2000-2015 Broadcom Corporation.
+Version cfe-ram: 0.14.12-sec
+
+Boot Strap Register:  0x7dfffc2f
+Chip ID: BCM63139_B0, ARM Cortex A9 Dual Core: 1000MHz
+Total Memory: 536870912 bytes (512MB)
+NAND ECC BCH-4, page size 0x800 bytes, spare size used 64 bytes
+NAND flash device: , id 0xadda block 128KB size 262144KB
+pmc_init:PMC using DQM mode
+ERROR!!! Data pointer greater than total entry size
+Board IP address                  : 192.168.1.1  
+Host IP address                   : 192.168.1.100  
+Gateway IP address                :   
+Run from flash/host/tftp (f/h/c)  : f  
+Default host run file name        : vmlinux  
+Default host flash file name      : bcm963xx_fs_kernel  
+Boot delay (0-9 seconds)          : 1  
+Default host ramdisk file name    :   
+Default ramdisk store address     :   
+Default DTB file name             :   
+Board Id                          : FAST5370e  
+Number of MAC Addresses (1-64)    : 10  
+Base MAC Address                  : e4:c0:e2:3c:b9:e0  
+PSI Size (1-128) KBytes           : 128  
+Enable Backup PSI [0|1]           : 0  
+System Log Size (0-256) KBytes    : 0  
+Auxillary File System Size Percent: 0  
+MC memory allocation (MB)         : 4  
+TM memory allocation (MB)         : 44  
+DHD 0 memory allocation (MB)      : 14  
+DHD 1 memory allocation (MB)      : 7  
+DHD 2 memory allocation (MB)      : 0  
+WLan Feature                      : 0x00  
+Partition 1 Size (MB)             : 0M  
+Partition 2 Size (MB)             : 0M  
+Partition 3 Size (MB)             : 0M  
+Partition 4 Size (MB) (Data)      : 4MB  
+
+Initalizing switch low level hardware.
+pmc_switch_power_up: Rgmii Tx clock zone1 enable 0 zone2 enable 0. 
+Software Resetting Switch ... Done.
+Waiting MAC port Rx/Tx to be enabled by hardware ...Done
+Disable Switch All MAC port Rx/Tx
+Initializing UBI and starting U-Boot...
+Looking for UBI...
+Looking for U-Boot...
+Found valid GSDF
+We got aes_key1
+We got aes_key2 enc
+Starting U-Boot from UBI at 0x00080000
+
+
+U-Boot 2017.09@sc-0.26.2 (Aug 07 2018 - 13:47:19 +0200) sc_f5370e
+
+CPU:   BCM63xx
+Model: Sagemcom FAST5370e
+DRAM:  512 MiB
+NAND:  256 MiB
+Using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+Version: 2017.09@sc-0.26.2-sec
+
+Board: FAST5370e
+Mode: secure
+ubi0: attaching mtd1
+ubi0: scanning is finished
+ubi0: attached mtd1 (name "mtd=2", size 8 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 70, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 7, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 3/0, WL threshold: 4096, image sequence number: 564194997
+ubi0: available PEBs: 28, total reserved PEBs: 42, PEBs reserved for bad PEB handling: 20
+ERROR: sc: invalid LAN base MAC address in PP
+Net:   brcm_rddeth
+sb3: booting 'operational'
+coe-aes: Using AES key2.
+ubi0: detaching mtd1
+ubi0: mtd1 is detached
+ubi0: attaching mtd1
+ubi0: scanning is finished
+ubi0: attached mtd1 (name "mtd=2", size 8 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 70, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 7, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 3/0, WL threshold: 4096, image sequence number: 564194997
+ubi0: available PEBs: 28, total reserved PEBs: 42, PEBs reserved for bad PEB handling: 20
+ubi0: detaching mtd1
+ubi0: mtd1 is detached
+ubi0: attaching mtd1
+ubi0: scanning is finished
+ubi0: attached mtd1 (name "mtd=3", size 141 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 1130, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 3, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 3/1, WL threshold: 4096, image sequence number: 2045100142
+ubi0: available PEBs: 81, total reserved PEBs: 1049, PEBs reserved for bad PEB handling: 20
+sb3: loaded image 'operational' (14729216 bytes) at 0x01000000
+sb3: image 'operational' type is 'gsdf'
+ERROR: gsdf: GSDF root certificate check failed
+ERROR: sb3: gsdf: verification failed
+ERROR: sb3: image 'operational' signature is invalid
+ERROR: sb3: failed to boot image 'operational'
+sb3: booting 'rescue'
+ubi0: detaching mtd1
+ubi0: mtd1 is detached
+ubi0: attaching mtd1
+ubi0: scanning is finished
+ubi0: attached mtd1 (name "mtd=3", size 141 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 1130, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 3, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 3/1, WL threshold: 4096, image sequence number: 2045100142
+ubi0: available PEBs: 81, total reserved PEBs: 1049, PEBs reserved for bad PEB handling: 20
+sb3: loaded image 'rescue' (31262720 bytes) at 0x01000000
+sb3: image 'rescue' type is 'gsdf'
+sb3: image 'rescue' signature is OK
+## Booting kernel from Legacy Image at 01001000 ...
+   Image Name:   scOS SG4T1E000606C (10.333.0)
+   Image Type:   ARM Linux Kernel Image (gzip compressed)
+   Data Size:    2686976 Bytes = 2.6 MiB
+   Load Address: 00008000
+   Entry Point:  00008000
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+Booting Linux on physical CPU 0
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Linux version 3.4.11-4.16L.05 (rmm-svce-urd2int04@compil-atr-2) (gcc version 4.6.2 (GCC) ) #1 SMP PREEMPT Thu Sep 10 18:26:17 CET 2020
+CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine: BCM963138
+Configured DHD pools size (in Bytes): [0]=0xe00000 [1]=0x700000 [2]=0x0
+bootconsole [earlycon0] enabled
+Memory policy: ECC disabled, Data cache writealloc
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0fd00000 to virtual address at 0xcfd00000 with size of 0x300000 byte for DSL
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0d000000 to virtual address at 0xcd000000 with size of 0x2c00000 byte for RDPA tm
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0cc00000 to virtual address at 0xccc00000 with size of 0x400000 byte for RDPA mc
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0be00000 to virtual address at 0xcbe00000 with size of 0xe00000 byte for DHD dhd0
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0b600000 to virtual address at 0xcb600000 with size of 0x700000 byte for DHD dhd1
+On node 0 totalpages: 112640
+free_area_init_node: node 0, pgdat c04ec760, node_mem_map c1000000
+  DMA zone: 32 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 4064 pages, LIFO batch:0
+  Normal zone: 992 pages used for memmap
+  Normal zone: 107552 pages, LIFO batch:31
+pmc_init:PMC using DQM mode
+pmc_init:ff8c 34c034d 4b004b
+L310 cache controller enabled
+l2x0: 16 ways, CACHE_ID 0x410000c9, AUX_CTRL 0x6a450000, Cache size: 524288 B
+PERCPU: Embedded 7 pages/cpu @c1405000 s5792 r8192 d14688 u32768
+pcpu-alloc: s5792 r8192 d14688 u32768 alloc=8*4096
+pcpu-alloc: [0] 0 [0] 1 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 111616
+Kernel command line: root=mtd:rootfs earlyprintk debug init=/etc/preinit ro rootfstype=squashfs console=ttyS0,115200 rootfs_offset=0x291800 rootfs_size=0x1b3f000  mtdparts=nand.0:128k(nvram),640k(cfe),8960k(boot),144640k(ubi),-(data) ubi.mtd=ubi,0 part_main=ubi part_boot=boot image_ubivol=rescue secure board_type=00030090 BOOT_ACTION=RESCUE_MODE oek=04005578 oiv=040056b8
+UBI image volume: "rescue"
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+allocated 1048576 bytes of page_cgroup
+please try 'cgroup_disable=memory' option if you don't want memory cgroups
+Memory: 182MB 1MB 1MB 256MB = 440MB total
+Memory: 439684k/439684k available, 84604k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xe0800000 - 0xff000000   ( 488 MB)
+    lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc048b694   (4622 kB)
+      .init : 0xc048c000 - 0xc04ae6a0   ( 138 kB)
+      .data : 0xc04b0000 - 0xc04ed2e0   ( 245 kB)
+       .bss : 0xc04ed304 - 0xc0523144   ( 216 kB)
+Preemptible hierarchical RCU implementation.
+	Dump stacks of tasks blocking RCU-preempt GP.
+NR_IRQS:256
+Cortex A9 MPCORE GIC init
+DIST at fc01f000, CPU_IF at fc01e100
+map_hw_timer_interrupt,132: interrupt_id 96
+map_hw_timer_interrupt,132: interrupt_id 97
+map_hw_timer_interrupt,132: interrupt_id 98
+map_hw_timer_interrupt,132: interrupt_id 99
+sched_clock: 32 bits at 1kHz, resolution 1000000ns, wraps every 4294967295ms
+console [ttyS0] enabled, bootconsole disabled
+console [ttyS0] enabled, bootconsole disabled
+Calibrating delay loop... 1990.65 BogoMIPS (lpj=995328)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+--Kernel Config--
+  SMP=1
+  PREEMPT=1
+  DEBUG_SPINLOCK=0
+  DEBUG_MUTEXES=0
+Initializing cgroup subsys cpuacct
+Initializing cgroup subsys memory
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys blkio
+CPU: Testing write buffer coherency: ok
+Broadcom Logger v0.1 Sep 10 2020 18:22:06
+Setting up static identity map for 0x36da40 - 0x36da74
+CPU1: Booted secondary processor
+CPU1: Unknown IPI message 0x1
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (3981.31 BogoMIPS).
+devtmpfs: initialized
+NET: Registered protocol family 16
+++++ Powering up USB blocks
+bcm63xx_pcie: setting resistor calibration value to 0x8
+bcm63xx_pcie: applying serdes parameters
+PCIE port 0 link-up
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x90000000-0x9fffffff]
+pci 0000:00:00.0: [14e4:6313] type 01 class 0x060400
+pci 0000:00:00.0: PME# supported from D0 D3hot
+PCI: bus0: Fast back to back transfers disabled
+pci 0000:01:00.0: [14e4:4365] type 00 class 0x028000
+pci 0000:01:00.0: reg 10: [mem 0x00000000-0x00007fff 64bit]
+pci 0000:01:00.0: reg 18: [mem 0x00000000-0x007fffff 64bit]
+pci 0000:01:00.0: reg 20: [mem 0x00000000-0x000fffff 64bit pref]
+pci 0000:01:00.0: supports D1 D2
+pci 0000:00:00.0: Checking PCIe ASPM for vendor 14e4 device 4365
+pci 0000:00:00.0: Disabling PCIe ASPM for vendor 14e4 device 4365
+PCI: bus1: Fast back to back transfers disabled
+pci 0000:00:00.0: BAR 8: assigned [mem 0x90000000-0x90bfffff]
+pci 0000:00:00.0: BAR 9: assigned [mem 0x90c00000-0x90cfffff 64bit pref]
+pci 0000:01:00.0: BAR 2: assigned [mem 0x90000000-0x907fffff 64bit]
+pci 0000:01:00.0: BAR 4: assigned [mem 0x90c00000-0x90cfffff 64bit pref]
+pci 0000:01:00.0: BAR 0: assigned [mem 0x90800000-0x90807fff 64bit]
+pci 0000:00:00.0: PCI bridge to [bus 01-01]
+pci 0000:00:00.0:   bridge window [mem 0x90000000-0x90bfffff]
+pci 0000:00:00.0:   bridge window [mem 0x90c00000-0x90cfffff 64bit pref]
+PCI: enabling device 0000:00:00.0 (0140 -> 0143)
+bcm63xx_pcie: setting resistor calibration value to 0x8
+bcm63xx_pcie: applying serdes parameters
+PCIE port 1 link-up
+PCI host bridge to bus 0001:00
+pci_bus 0001:00: root bus resource [mem 0xa0000000-0xafffffff]
+pci 0001:00:00.0: [14e4:6313] type 01 class 0x060400
+pci 0001:00:00.0: PME# supported from D0 D3hot
+PCI: bus0: Fast back to back transfers disabled
+pci 0001:01:00.0: [14e4:4365] type 00 class 0x028000
+pci 0001:01:00.0: reg 10: [mem 0x00000000-0x00007fff 64bit]
+pci 0001:01:00.0: reg 18: [mem 0x00000000-0x007fffff 64bit]
+pci 0001:01:00.0: reg 20: [mem 0x00000000-0x000fffff 64bit pref]
+pci 0001:01:00.0: supports D1 D2
+pci 0001:00:00.0: Checking PCIe ASPM for vendor 14e4 device 4365
+pci 0001:00:00.0: Disabling PCIe ASPM for vendor 14e4 device 4365
+PCI: bus1: Fast back to back transfers disabled
+pci 0001:00:00.0: BAR 8: assigned [mem 0xa0000000-0xa0bfffff]
+pci 0001:00:00.0: BAR 9: assigned [mem 0xa0c00000-0xa0cfffff 64bit pref]
+pci 0001:01:00.0: BAR 2: assigned [mem 0xa0000000-0xa07fffff 64bit]
+pci 0001:01:00.0: BAR 4: assigned [mem 0xa0c00000-0xa0cfffff 64bit pref]
+pci 0001:01:00.0: BAR 0: assigned [mem 0xa0800000-0xa0807fff 64bit]
+pci 0001:00:00.0: PCI bridge to [bus 01-01]
+pci 0001:00:00.0:   bridge window [mem 0xa0000000-0xa0bfffff]
+pci 0001:00:00.0:   bridge window [mem 0xa0c00000-0xa0cfffff 64bit pref]
+PCI: enabling device 0001:00:00.0 (0140 -> 0143)
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+bcmhs_spi bcmhs_spi.1: master is unqueued, this is deprecated
+skb_free_task created successfully
+gbpm_do_work scheduled
+BLOG v3.0 Initialized
+BLOG Rule v1.0 Initialized
+Broadcom IQoS v0.1 Sep 10 2020 18:25:05 initialized
+Broadcom GBPM v0.1 Sep 10 2020 18:25:05 initialized
+NET: Registered protocol family 8
+NET: Registered protocol family 20
+Switching to clocksource timer_cs
+NET: Registered protocol family 2
+IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+TCP bind hash table entries: 16384 (order: 5, 196608 bytes)
+TCP: Hash tables configured (established 16384 bind 16384)
+TCP: reno registered
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Registering unionfs 2.6 (for 3.4.103)
+jffs2: version 2.2. (NAND) � 2001-2006 Red Hat, Inc.
+msgmni has been set to 858
+io scheduler noop registered (default)
+brd: module loaded
+loop: module loaded
+Broadcom NAND controller (BrcmNand Controller)
+mtd->oobsize=0, mtd->eccOobSize=0
+NAND_CS_NAND_XOR=00000000
+B4: NandSelect=20000000, nandConfig=26152300, chipSelect=0
+brcmnand_read_id: CS0: dev_id=adda9095
+After: NandSelect=00000100, nandConfig=26152300
+Block size=00020000, erase shift=17
+NAND Config: Reg=26152300, chipSize=256 MB, blockSize=128K, erase_shift=11
+busWidth=1, pageSize=2048B, page_shift=11, page_mask=000007ff
+BrcmNAND mfg ad da Hynix HY27UF082G2A 256MB on CS0
+
+Found NAND on CS0: ACC=c3840010, cfg=26152300, flashId=adda9095, tim1=65424458, tim2=80000e55
+BrcmNAND version = 0x80000700 256MB @00000000
+brcmnand_scan: B4 nand_select = 00000100
+brcmnand_scan: After nand_select = 00000100
+handle_acc_control: default CORR ERR threshold  3 bits
+ACC: 16 OOB bytes per 512B ECC step; from ID probe: 16
+page_shift=11, bbt_erase_shift=17, chip_shift=28, phys_erase_shift=17
+Brcm NAND controller version = 7.0 NAND flash size 256MB @10000000
+ECC layout=brcmnand_oob_bch4_2k
+brcmnand_scan:  mtd->oobsize=64
+brcmnand_scan: oobavail=35, eccsize=512, writesize=2048
+brcmnand_scan, eccsize=512, writesize=2048, eccsteps=4, ecclevel=4, eccbytes=7
+-->brcmnand_default_bbt
+brcmnand_default_bbt: bbt_td = bbt_slc_bch4_main_descr
+Bad block table Bbt0 not found for chip on CS0
+Bad block table 1tbB not found for chip on CS0
+Scanning device for bad blocks, options=00008000
+brcmnand_reset_corr_threshold: default CORR ERR threshold  3 bits for CS0
+-->brcmnand_isbad_raw(offs=ffe0000
+Bad block table written to 0x0ffe0000, version 0x01
+-->brcmnand_isbad_raw(offs=ffc0000
+Bad block table written to 0x0ffc0000, version 0x01
+Master size=10000000
+rootfs_ofs=0xffffffff, part1ofs=0x00000080, part2ofs=0x0001f600
+Part[0] name=bcmfs, size=20000, ofs=0
+Part[1] name=bcmfs_update, size=a0000, ofs=20000
+Part[2] name=ubi, size=fa40000, ofs=c0000
+Part[3] name=data, size=400000, ofs=fb00000
+Part[4] name=nvram, size=20000, ofs=0
+5 cmdlinepart partitions found on MTD device nand.0
+Creating 5 MTD partitions on "nand.0":
+0x000000000000-0x000000020000 : "nvram"
+0x000000020000-0x0000000c0000 : "cfe"
+0x0000000c0000-0x000000980000 : "boot"
+0x000000980000-0x0000096c0000 : "ubi"
+0x0000096c0000-0x000010000000 : "data"
+UBI: attaching mtd3 to ubi0
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    126976 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: VID header offset:          2048 (aligned 2048)
+UBI: data offset:                4096
+UBI: max. sequence number:       1115
+UBI: attached mtd3 to ubi0
+UBI: MTD device name:            "ubi"
+UBI: MTD device size:            141 MiB
+UBI: number of good PEBs:        1130
+UBI: number of bad PEBs:         0
+UBI: number of corrupted PEBs:   0
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     3
+UBI: available PEBs:             90
+UBI: total number of reserved PEBs: 1040
+UBI: number of PEBs reserved for bad PEB handling: 11
+UBI: max/mean erase counter: 3/1
+UBI: image sequence number:  2045100142
+UBI: background thread "ubi_bgt0d" started, PID 246
+Add UBI volume partitions: name=filesystem1
+Add UBI volume partitions: name=operational
+Add UBI volume partitions: name=rescue
+Creating 3 MTD partitions on "rescue":
+0x000000000000-0x00000001f000 : "firm_header"
+0x00000001f000-0x0000002b0800 : "kernel"
+mtd: partition "kernel" doesn't end on an erase block -- force read-only
+0x000000291800-0x000001dd0800 : "rootfs"
+mtd: partition "rootfs" doesn't start on an erase block boundary -- force read-only
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+PPP generic driver version 2.4.2
+PPP BSD Compression module registered
+PPP Deflate Compression module registered
+NET: Registered protocol family 24
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd: block sizes: qh 64 qtd 96 itd 160 sitd 96
+ehci-platform ehci-platform.0: Generic Platform EHCI Controller
+drivers/usb/core/inode.c: creating file 'devices'
+drivers/usb/core/inode.c: creating file '001'
+ehci-platform ehci-platform.0: new USB bus registered, assigned bus number 1
+ehci-platform ehci-platform.0: reset hcs_params 0x1212 dbg=0 cc=1 pcc=2 ordered ports=2
+ehci-platform ehci-platform.0: reset hcc_params a026 thresh 2 uframes 256/512/1024 park
+ehci-platform ehci-platform.0: park 0
+ehci-platform ehci-platform.0: reset command 0080b02  park=3 ithresh=8 period=1024 Reset HALT
+ehci-platform ehci-platform.0: irq 105, io mem 0x8000c300
+ehci-platform ehci-platform.0: init command 0010005 (park)=0 ithresh=1 period=512 RUN
+ehci-platform ehci-platform.0: USB 2.0 started, EHCI 1.00
+usb usb1: default language 0x0409
+usb usb1: udev 1, busnum 1, minor = 0
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: Generic Platform EHCI Controller
+usb usb1: Manufacturer: Linux 3.4.11-4.16L.05 ehci_hcd
+usb usb1: SerialNumber: ehci-platform.0
+usb usb1: usb_probe_device
+usb usb1: configuration #1 chosen from 1 choice
+usb usb1: adding 1-0:1.0 (config #1, interface 0)
+hub 1-0:1.0: usb_probe_interface
+hub 1-0:1.0: usb_probe_interface - got id
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+hub 1-0:1.0: standalone hub
+hub 1-0:1.0: individual port power switching
+hub 1-0:1.0: individual port over-current protection
+hub 1-0:1.0: power on to power good time: 20ms
+hub 1-0:1.0: local power source is good
+hub 1-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci_hcd: block sizes: ed 64 td 64
+ohci-platform ohci-platform.0: Generic Platform OHCI Controller
+drivers/usb/core/inode.c: creating file '002'
+ohci-platform ohci-platform.0: new USB bus registered, assigned bus number 2
+ohci-platform ohci-platform.0: created debug files
+ohci-platform ohci-platform.0: irq 104, io mem 0x8000c400
+ohci-platform ohci-platform.0: OHCI controller state
+ohci-platform ohci-platform.0: OHCI 1.0, NO legacy support registers, rh state running
+hub 1-0:1.0: state 7 ports 2 chg 0000 evt 0000
+ohci-platform ohci-platform.0: control 0x083 HCFS=operational CBSR=3
+ohci-platform ohci-platform.0: cmdstatus 0x00000 SOC=0
+ohci-platform ohci-platform.0: intrstatus 0x00000004 SF
+ohci-platform ohci-platform.0: intrenable 0x8000005a MIE RHSC UE RD WDH
+ohci-platform ohci-platform.0: hcca frame #002c
+ohci-platform ohci-platform.0: roothub.a 02000202 POTPGT=2 NPS NDP=2(2)
+ohci-platform ohci-platform.0: roothub.b 00000000 PPCM=0000 DR=0000
+ohci-platform ohci-platform.0: roothub.status 00008000 DRWE
+ohci-platform ohci-platform.0: roothub.portstatus [0] 0x00000100 PPS
+ohci-platform ohci-platform.0: roothub.portstatus [1] 0x00000100 PPS
+usb usb2: default language 0x0409
+usb usb2: udev 1, busnum 2, minor = 128
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: Generic Platform OHCI Controller
+usb usb2: Manufacturer: Linux 3.4.11-4.16L.05 ohci_hcd
+usb usb2: SerialNumber: ohci-platform.0
+usb usb2: usb_probe_device
+usb usb2: configuration #1 chosen from 1 choice
+usb usb2: adding 2-0:1.0 (config #1, interface 0)
+hub 2-0:1.0: usb_probe_interface
+hub 2-0:1.0: usb_probe_interface - got id
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+hub 2-0:1.0: standalone hub
+hub 2-0:1.0: no power switching (usb 1.0)
+hub 2-0:1.0: global over-current protection
+hub 2-0:1.0: power on to power good time: 4ms
+hub 2-0:1.0: local power source is good
+hub 2-0:1.0: no over-current condition exists
+hub 2-0:1.0: trying to enable port power on non-switchable hub
+drivers/usb/core/inode.c: creating file '001'
+uhci_hcd: USB Universal Host Controller Interface driver
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+drivers/usb/core/inode.c: creating file '003'
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 3
+xhci-hcd xhci-hcd.0: irq 106, io mem 0x8000d000
+usb usb3: default language 0x0409
+usb usb3: udev 1, busnum 3, minor = 256
+usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb3: Product: xHCI Host Controller
+usb usb3: Manufacturer: Linux 3.4.11-4.16L.05 xhci-hcd
+usb usb3: SerialNumber: xhci-hcd.0
+usb usb3: usb_probe_device
+usb usb3: configuration #1 chosen from 1 choice
+xHCI xhci_add_endpoint called for root hub
+xHCI xhci_check_bandwidth called for root hub
+usb usb3: adding 3-0:1.0 (config #1, interface 0)
+hub 3-0:1.0: usb_probe_interface
+hub 3-0:1.0: usb_probe_interface - got id
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 0 ports detected
+hub 3-0:1.0: standalone hub
+hub 3-0:1.0: individual port power switching
+hub 3-0:1.0: individual port over-current protection
+hub 2-0:1.0: state 7 ports 2 chg 0000 evt 0000
+hub 3-0:1.0: Single TT
+hub 3-0:1.0: TT requires at most 8 FS bit times (666 ns)
+hub 3-0:1.0: power on to power good time: 20ms
+hub 3-0:1.0: local power source is good
+hub 3-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+drivers/usb/core/inode.c: creating file '004'
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 4
+usb usb4: skipped 1 descriptor after endpoint
+usb usb4: default language 0x0409
+usb usb4: udev 1, busnum 4, minor = 384
+usb usb4: New USB device found, idVendor=1d6b, idProduct=0003
+usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb4: Product: xHCI Host Controller
+usb usb4: Manufacturer: Linux 3.4.11-4.16L.05 xhci-hcd
+usb usb4: SerialNumber: xhci-hcd.0
+usb usb4: usb_probe_device
+usb usb4: configuration #1 chosen from 1 choice
+xHCI xhci_add_endpoint called for root hub
+xHCI xhci_check_bandwidth called for root hub
+usb usb4: adding 4-0:1.0 (config #1, interface 0)
+hub 4-0:1.0: usb_probe_interface
+hub 4-0:1.0: usb_probe_interface - got id
+hub 4-0:1.0: USB hub found
+hub 4-0:1.0: 2 ports detected
+hub 4-0:1.0: standalone hub
+hub 4-0:1.0: individual port power switching
+hub 4-0:1.0: individual port over-current protection
+hub 4-0:1.0: TT requires at most 8 FS bit times (666 ns)
+hub 3-0:1.0: state 7 ports 0 chg 0000 evt 0000
+hub 4-0:1.0: power on to power good time: 20ms
+hub 4-0:1.0: local power source is good
+hub 4-0:1.0: enabling power on all ports
+drivers/usb/core/inode.c: creating file '001'
+usbcore: registered new interface driver cdc_acm
+cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver usbserial
+usbserial: USB Serial Driver core
+brcmboard: brcm_board_init entry
+DYING GASP IRQ Initialized and Enabled
+Serial: BCM63XX driver $Revision: 3.00 $
+Magic SysRq with Auxilliary trigger char enabled (type ^ h for list of supported commands)
+ttyS0 at MMIO 0xfffe8600 (irq = 64) is a BCM63XX
+ttyS1 at MMIO 0xfffe8620 (irq = 65) is a BCM63XX
+BPM: tot_mem_size=536870912B (512MB), buf_mem_size <8%> =42949672B (40MB), num of buffers=21304, buf size=2016
+Broadcom BPM Module Char Driver v0.1 Sep 10 2020 18:24:15 Registered<244>
+hub 4-0:1.0: state 7 ports 2 chg 0000 evt 0000
+GACT probability NOT on
+Mirror/redirect action on
+u32 classifier
+    input device check on
+    Actions configured
+TCP: cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+Initializing MCPD Module
+Ebtables v2.0 registered
+ebt_time registered
+ebt_ftos registered
+ebt_wmm_mark registered
+L2TP core: blog_l2tp_rcv_check 
+L2TP core driver, V2.0
+PPPoL2TP kernel driver, V2.0
+8021q: 802.1Q VLAN Support v1.8
+VFS: Mounted root (squashfs filesystem) readonly on device 31:10.
+devtmpfs: mounted
+Freeing init memory: 136K
+kernel.hotplug = /sbin/mdev
+- preinit -
+- regular preinit -
+- init -
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 0, volume 0, name "filesystem1"
+UBIFS: file system size:   40886272 bytes (39928 KiB, 38 MiB, 322 LEBs)
+UBIFS: journal size:       2031616 bytes (1984 KiB, 1 MiB, 16 LEBs)
+UBIFS: media format:       w4/r0 (latest is w4/r0)
+UBIFS: default compressor: lzo
+UBIFS: reserved for root:  1931159 bytes (1885 KiB)
+UBI: attaching mtd2 to ubi1
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    126976 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: VID header offset:          2048 (aligned 2048)
+UBI: data offset:                4096
+UBI: max. sequence number:       12
+UBI: attached mtd2 to ubi1
+UBI: MTD device name:            "boot"
+UBI: MTD device size:            8 MiB
+UBI: number of good PEBs:        70
+UBI: number of bad PEBs:         0
+UBI: number of corrupted PEBs:   0
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     7
+UBI: available PEBs:             46
+UBI: total number of reserved PEBs: 24
+UBI: number of PEBs reserved for bad PEB handling: 2
+UBI: max/mean erase counter: 3/0
+UBI: image sequence number:  564194997
+UBI: background thread "ubi_bgt1d" started, PID 460
+Add UBI volume partitions: name=secondaryboot
+Add UBI volume partitions: name=secondaryboot-secure
+Add UBI volume partitions: name=uboot
+Add UBI volume partitions: name=permanent_param
+Add UBI volume partitions: name=aes_key1
+Add UBI volume partitions: name=aes_key2
+Add UBI volume partitions: name=aes_key_operator
+unionfs: new lower inode mtime (bindex=1, name=tmp)
+bsp_gpio_data: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+Driver LED and BUTTON init .....
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+[HAL-BSP]: kSysButtonManaged[41]: WARNING -> Button name >= Max(9)
+ Driver LED and BUTTON ok .....
+sgcnet: Unknown symbol sgc_on_send_igmp_leave_cb (err 0)
+sgcnet: Unknown symbol sgc_on_send_igmp_join_cb (err 0)
+sgcnet: Unknown symbol sgc_on_recv_igmp_query_cb (err 0)
+Endpoint: endpoint_init entry ( MS 4.16L.04 )
+Endpoint: HAL-BSP : bsp board  found ... Fast5370e_TELIA
+Endpoint: Try to find table matching with : [BaseBoardId=F@ST_5370 / VoiceBoardId=SI32176] ...
+ SUCCESS
+Endpoint: endpoint_init COMPLETED
+tm_base_addr 0xcd000000, size 46137344, tm_base_addr_phys 0x0d000000
+mc_base_addr 0xccc00000, size 4194304, mc_base_addr_phys 0x0cc00000
+
+ RDP TM memory = 44MB, MC memory = 4MB : Max Possible Bufs <15359> of size <2560>; Allocating <7680> bufs; RDP enum <2>
+WARNING!RDP reserved memories are wasting 22MB of memory, please adjust your reserved memory size
+++++Runner gso_desc_pool created successfully
+brcmchipinfo: brcm_chipinfo_init entry
+bcmxtmrt: Broadcom BCM3139B0 ATM/PTM Network Device v0.9 Sep 10 2020 17:59:35
+Creating CPU ring for queue number 5 with 256 packets descriptor=0xbf7bcef4
+ Done initializing Ring 5 Base=0xffdee000 End=0xffdef000 calculated entries= 256 RDD Base=0x00c06000 descriptor=0xbf7bcef4
+Creating CPU ring for queue number 6 with 256 packets descriptor=0xbf7bcf40
+ Done initializing Ring 6 Base=0xffde6000 End=0xffde7000 calculated entries= 256 RDD Base=0x00c0c000 descriptor=0xbf7bcf40
+NBUFF v1.0 Initialized
+Initialized fcache state
+Broadcom Packet Flow Cache  Char Driver v3.0 Sep 10 2020 17:56:30 Registered<242>
+Created Proc FS /procfs/fcache
+Broadcom Packet Flow Cache registered with netdev chain
+Broadcom Packet Flow Cache learning via BLOG enabled.
+[FHW]  pktDbgLvl[0xbf822da4]=0
+[FHW]  fhw_construct: 
+Initialized Fcache HW accelerator layer state
+flwStatsThread created
+Constructed Broadcom Packet Flow Cache v3.0 Sep 10 2020 17:56:30
+bcmxtmcfg: bcmxtmcfg_init entry
+adsl: adsl_init entry
+pmc_switch_power_up: Rgmii Tx clock zone1 enable 0 zone2 enable 0. 
+
+ LINK DOWN IMP Port 
+Runner Port#0 (Internal MUX Port#2) connects to Crossbar Port#1
+Switch Port#3 (Internal MUX Port#0) connects to Crossbar Port#4
+Unused MUX Internal Port#1 connects to Crossbar External Port#0
+Cross Bar MUX Config : Internal Port 00 maps to External Port 04 <reg_val : 0x0000000c>
+Cross Bar MUX Config : Internal Port 01 maps to External Port 00 <reg_val : 0x00000004>
+Cross Bar MUX Config : Internal Port 02 maps to External Port 01 <reg_val : 0x00000044>
+Broadcom BCM63139B0 Ethernet Network Device v0.1 Sep 10 2020 17:59:29
+dgasp: kerSysRegisterDyingGaspHandler: bcmsw registered 
+++++ disabling GSO on logical_port=0 dev=eth0
+eth0: <Int sw port: 0> <Logical : 00> PHY_ID <0x0007f00c : 0x0c> MAC : 00:00:00:00:00:01
+eth1: <Ext sw port: 0> <Logical : 08> PHY_ID <0x0007f008 : 0x08> MAC : 00:00:00:00:00:01
+eth2: <Ext sw port: 1> <Logical : 09> PHY_ID <0x0007f009 : 0x09> MAC : 00:00:00:00:00:01
+eth3: <Ext sw port: 2> <Logical : 10> PHY_ID <0x0007f00a : 0x0a> MAC : 00:00:00:00:00:01
+eth4: <Ext sw port: 3> <Logical : 11> PHY_ID <0x0007f00b : 0x0b> MAC : 00:00:00:00:00:01
+Ethernet Auto Power Down and Sleep: Enabled
+Cross bar port 1 of Int switch port 0; Adv capability change : MII=0x01e1, GMII=0x0f00
+Ext switch port 0; Adv capability change : MII=0x01e1, GMII=0x0f00
+Ext switch port 1; Adv capability change : MII=0x01e1, GMII=0x0f00
+Ext switch port 2; Adv capability change : MII=0x01e1, GMII=0x0f00
+Cross bar port 4 of Ext switch port 3; Adv capability change : MII=0x01e1, GMII=0x0f00
+All Port Bit Map: 0x0f01: eth0,eth1,eth2,eth3,eth4
+   Chip WAN Only Ports 0001, Defined WAN Only Ports 0000, WAN Only Port Result: 0x0001:eth0
+   Chip WAN Preffered Ports 0000, Defined WAN Preffered Ports 0000, WAN Preffered Port Result: 0x0000:
+   Chip LAN Only Ports 0f00, Defined LAN Only Ports 0000, LAN Only Port Result: 0x0f00:eth1,eth2,eth3,eth4
+   WAN/LAN Both Capable Ports 0x0000:
+Creating Enet CPU ring for queue number 1 with 512 packets,Descriptor base=ffde0000
+ Creating Enet CPU ring for queue number 0 with 512 packets,Descriptor base=ffddc000
+ Initialized Runner Host Layer
+Initialized Runner Unicast Layer
+Initialized Runner L2 Unicast Layer
+Initialized Runner Multicast Layer
+Broadcom Packet Flow Cache HW acceleration enabled.
+Enabled Runner binding to Flow Cache
+Initialized Runner Protocol Layer (700)
+Broadcom Runner Blog Driver Char Driver v0.1 Sep 10 2020 17:56:31 Registered <3009>
+Wifi Forwarding Driver is initialized!
+DHD_FKB_POOL size is:1280 and entry size:2016
+fkbpool address range: d9c00000 <-> d9e76000
+DHD_PKTTAG POOL size is:1280 and entry size:64
+dhd_module_init in
+dhd_queue_budget = 256
+dhd_sta_threshold = 2048
+dhd_if_threshold = 65536
+no wifi platform data, skip
+PCI_PROBE:  bus 1, slot 0,vendor 14E4, device 4365(good PCI location)
+dhdpcie_init: can't find adapter info for this chip
+PCI: enabling device 0000:01:00.0 (0140 -> 0142)
+DHD: dongle ram size is set to 1835008(orig 1835008) at 0x200000
+dhd:0: fw path:/etc/wlan/dhd nv path:(null)
+Creating CPU ring for queue number 7 with 128 packets descriptor=0xbf7bcf8c
+ Done initializing Ring 7 Base=0xffdf3000 End=0xffdf3800 calculated entries= 128 RDD Base=0x00c17000 descriptor=0xbf7bcf8c
+RDPA returned tx wakeup reg = <0x80299004>, val = <0x10000000>
+RDPA returned rx wakeup reg = <0x8029a004>, val = <0x26000000>
+dhd_runner_attach: Rx Offload - Enabled, Ring Size = 1024
+dhd_attach: wl0: pre-allocated buffer mode is disabled (allocskbsz=0)
+dhd_attach(): thread:dhd_watchdog_thread:2f9 started
+dhd_deferred_work_init: work queue initialized 
+Creating CPU ring for queue number 0 with 1024 packets descriptor=0xbf982714
+ Creating CPU ring for queue number 1 with 1024 packets descriptor=0xbf982730
+  wfd_bind: Dev wl%d wfd_idx 0 wl_radio_idx 0 Type fkb configured WFD thread wfd0-thrd minQId/maxQId (8/9), status (0) qmask 0x3
+dhd:0: fw path:/etc/wlan/dhd nv path:(null)
+dhd_bus_download_firmware: firmware path=/etc/wlan/dhd, nvram path=
+Instantiating WFD 0 thread
+dhdpcie_ramsize_adj: Enter
+dhdpcie_ramsize_adj: Adjust dongle RAMSIZE to 0x240000
+dhdpcie_download_code_file: download firmware /etc/wlan/dhd/4366c0/rtecdc.bin
+wl:srom/otp not programmed, using main memory mapped srom info(wombo board)
+wl: ID=pci/0/1/0/
+wl: ID=pci/0/1/0/
+wl: loading /etc/wlan/bcm43664_map.bin
+wl: reading /etc/wlan/bcmcmn_nvramvars.bin, file size=20
+wl: reading /etc/wlan/bcm43664_nvramvars.bin, file size=20
+Replace or append with internal Mac Address
+dhdpcie_bus_write_vars: Download, Upload and compare of NVRAM succeeded.
+PCIe shared addr (0x002ab20c) read took 56023 usec before dongle is ready
+DMA RX offset from shared Area 0
+dhdpcie_readshared: Dongle advertizes 2 size indices
+dhdpcie_readshared: Host support DMAing indices: H2D:1 - D2H:1. FW supports it
+H2D DMA WR INDX : array size 544 = 2 * 266
+D2H DMA RD INDX : array size 32 = 2 * 3
+D2H DMA WR INDX : array size 32 = 2 * 3
+H2D DMA RD INDX : array size 544 = 2 * 266
+ring_info_raw: 56 
+d4 6a 43 00 a4 7b 43 00 b8 7d 43 00 cc 7f 43 00 
+d2 7f 43 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 0a 01 00 00 
+dhdpcie_readshared: max H2D queues 266
+dhd_bus_start: Initializing 266 h2drings
+dhd_runner_flowmgr_init: bootmem name<dhd0> addr<cbe00000> size<14680064>
+dhd_runner_profile_init: N+M profile = 3 01:1024 -1:2048 -1:1024 -1:0512 01:0512
+dhd_runner_policy_init: N+M Policy = 0 1 (HW)
+dhd_bus_cmn_writeshared:
+  0000: 00 f0 95 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 00 c2 00 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 80 06 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 c0 c1 00 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 80 c2 00 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 00 20 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 10 14 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 48 06 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 4c 06 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 40 06 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 44 06 1a 00 00 00 00 
+Attach flowrings pool for 264 rings
+Runner DHD PCIE: vendor<0x14e4> device<0x4365> bus<1> slot<0>
+Initial configuration
+=================================
+	rx_post_flow_ring_base_addr : c0c20000
+	tx_post_flow_ring_base_addr : cbdc4000
+	rx_complete_flow_ring_base_addr : c0c28000
+	tx_complete_flow_ring_base_addr : c0c1c000
+
+	r2d_wr_arr_base_addr : ffdd4000
+	d2r_rd_arr_base_addr : ffdd4402
+	r2d_rd_arr_base_addr : ffdd4c00
+	d2r_wr_arr_base_addr : ffdd4802
+	tx_post_mgmt_arr_base_addr : ffdd5000
+	tx_post_mgmt_arr_base_phys_addr : 1a065000
+
+	r2d_wr_arr_base_phys_addr : 1a064000
+	d2r_rd_arr_base_phys_addr : 1a064402
+	r2d_rd_arr_base_phys_addr : 1a064c00
+	d2r_wr_arr_base_phys_addr : 1a064802
+
+	Doorbell ISR : bf9a8794
+	Doorbell CTX : daa16e00
+Runner DHD Offload initialization complete
+dhd_rx_frame: net device is NOT registered. drop event packet
+dhd_rx_frame: net device is NOT registered. drop event packet
+CUR_ETHERADDR : 6 
+00 00 00 00 00 01 
+dhd_sync_with_dongle: GET_REVINFO device 0x43c5, vendor 0x14e4, chipnum 0xaa90
+
+Dongle Host Driver, version 7.14.164.23.cpe4.16L05.0-kdb
+wfd_registerdevice Successfully registered dev wl0 ifidx 0 wfd_idx 0
+PCI_PROBE:  bus 1, slot 0,vendor 14E4, device 4365(good PCI location)
+dhdpcie_init: can't find adapter info for this chip
+PCI: enabling device 0001:01:00.0 (0140 -> 0142)
+DHD: dongle ram size is set to 1835008(orig 1835008) at 0x200000
+dhd:1: fw path:/etc/wlan/dhd nv path:(null)
+Creating CPU ring for queue number 1 with 128 packets descriptor=0xbf7bcdc4
+ Done initializing Ring 1 Base=0xffde5000 End=0xffde5800 calculated entries= 128 RDD Base=0x00c3d000 descriptor=0xbf7bcdc4
+RDPA returned tx wakeup reg = <0x80299004>, val = <0x11000000>
+RDPA returned rx wakeup reg = <0x8029a004>, val = <0x27000000>
+dhd_runner_attach: Rx Offload - Enabled, Ring Size = 1024
+dhd_attach: wl1: pre-allocated buffer mode is disabled (allocskbsz=0)
+dhd_attach(): thread:dhd_watchdog_thread:2fe started
+dhd_deferred_work_init: work queue initialized 
+Creating CPU ring for queue number 2 with 1024 packets descriptor=0xbf98274c
+ Creating CPU ring for queue number 3 with 1024 packets descriptor=0xbf982768
+  wfd_bind: Dev wl%d wfd_idx 1 wl_radio_idx 1 Type fkb configured WFD thread wfd1-thrd minQId/maxQId (10/11), status (0) qmask 0xc
+Instantiating WFD 1 thread
+dhd:1: fw path:/etc/wlan/dhd nv path:(null)
+dhd_bus_download_firmware: firmware path=/etc/wlan/dhd, nvram path=
+dhdpcie_ramsize_adj: Enter
+dhdpcie_ramsize_adj: Adjust dongle RAMSIZE to 0x240000
+dhdpcie_download_code_file: download firmware /etc/wlan/dhd/4366c0/rtecdc.bin
+CONSOLE: 000000.000 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 000000.000 initvars_cis_pci: Not CIS format
+CONSOLE: 000000.000 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 000000.000 ipxotp_read_region: h/w region not programmed
+CONSOLE: 000000.000 Neither SPROM nor OTP has valid image
+CONSOLE: 000000.000 srom rev:0
+CONSOLE: 000000.000 initvars_srom_pci, SROM CRC Error
+CONSOLE: 000000.000 initvars_srom_pci, Using external nvram
+CONSOLE: 000000.000 Setting clocks to 800/400/200
+CONSOLE: 000000.000 si_set_bb_vcofreq_frac: only work on 4360, 4350
+CONSOLE: 000000.000 Enabling D-cache
+CONSOLE: 026738.568 gic_dist_init max_irq 64
+CONSOLE: 026738.569 c_init: Watchdog reset bit set, clearing
+CONSOLE: 026738.569 
+CONSOLE: RTE (PCIE-MSG_BUF) 10.10.122.26 (r733804) on BCM43664 r4 @ 40.0/200.0/800.0MHz
+CONSOLE: 026738.569 nvram_init: called again without calling nvram_exit()
+CONSOLE: 026738.569 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+wl:srom/otp not programmed, using main memory mapped srom info(wombo board)
+wl: ID=pci/1/1/0/
+wl: ID=pci/1/1/0/
+wl: loading /etc/wlan/bcm43664_wl1_map.bin
+wl: reading /etc/wlan/bcmcmn_nvramvars.bin, file size=20
+wl: reading /etc/wlan/bcm43664_nvramvars.bin, file size=20
+Replace or append with internal Mac Address
+dhdpcie_bus_write_vars: Download, Upload and compare of NVRAM succeeded.
+CONSOLE: 026738.569 initvars_cis_pci: Not CIS format
+CONSOLE: 026738.570 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.570 ipxotp_read_region: h/w region not programmed
+CONSOLE: 026738.570 Neither SPROM nor OTP has valid image
+CONSOLE: 026738.570 srom rev:0
+CONSOLE: 026738.570 initvars_srom_pci, SROM CRC Error
+CONSOLE: 026738.570 initvars_srom_pci, Using external nvram
+PCIe shared addr (0x002ab20c) read took 8023 usec before dongle is ready
+DMA RX offset from shared Area 0
+dhdpcie_readshared: Dongle advertizes 2 size indices
+dhdpcie_readshared: Host support DMAing indices: H2D:1 - D2H:1. FW supports it
+H2D DMA WR INDX : array size 544 = 2 * 266
+D2H DMA RD INDX : array size 32 = 2 * 3
+D2H DMA WR INDX : array size 32 = 2 * 3
+H2D DMA RD INDX : array size 544 = 2 * 266
+ring_info_raw: 56 
+d4 6a 43 00 a4 7b 43 00 b8 7d 43 00 cc 7f 43 00 
+d2 7f 43 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 0a 01 00 00 
+dhdpcie_readshared: max H2D queues 266
+dhd_bus_start: Initializing 266 h2drings
+dhd_runner_flowmgr_init: bootmem name<dhd1> addr<cb600000> size<7340032>
+dhd_runner_profile_init: N+M profile = 3 01:1024 -1:2048 -1:1024 -1:0512 01:0512
+dhd_runner_policy_init: N+M Policy = 0 1 (HW)
+CONSOLE: 026738.570 allocating a max of 511 rxcplid buffers
+CONSOLE: 026738.570 pciemsgbuf0: Broadcom PCIE MSGBUF driver
+CONSOLE: 026738.570 nvram_init: called again without calling nvram_exit()
+CONSOLE: 026738.570 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.570 initvars_cis_pci: Not CIS format
+CONSOLE: 026738.570 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.570 ipxotp_read_region: h/w region not programmed
+CONSOLE: 026738.570 Neither SPROM nor OTP has valid image
+CONSOLE: 026738.570 srom rev:0
+CONSOLE: 026738.571 initvars_srom_pci, SROM CRC Error
+CONSOLE: 026738.571 initvars_srom_pci, Using external nvram
+CONSOLE: 026738.571 wlc_ucode_download: wl0: Loading non-MU ucode
+CONSOLE: 026738.571 reclaim section 0: Returned 216 bytes to the heap
+CONSOLE: 026738.572 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.572 initvars_cis_pci: Not CIS format
+CONSOLE: 026738.572 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.572 ipxotp_read_region: h/w region not programmed
+CONSOLE: 026738.572 Neither SPROM nor OTP has valid image
+CONSOLE: 026738.572 srom rev:0
+CONSOLE: 026738.572 initvars_srom_pci, SROM CRC Error
+CONSOLE: 026738.572 initvars_srom_pci, Using external nvram
+CONSOLE: 026738.572 wlc_bmac_attach, deviceid 0x43c5 nbands 1
+CONSOLE: 026738.581 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.581 wl0: wlc_bmac_attach: chiprev 4 corerev 65 cccap 0x58400009 maccap 0xf0018705 band 5G, phy_type 11 phy_rev 33
+CONSOLE: 026738.582 wl0: wlc_stf_txcore_shmem_write: No clock
+CONSOLE: 026738.583 wl0: wlc_ampdu_tx_set: AGG Mode = MAC+AQM txmaxpkts 512
+CONSOLE: 026738.585 wl_eventq_dup_event: wl_eventq not initialized
+CONSOLE: 026738.585 wl_eventq_dup_event: wl_eventq not initialized
+CONSOLE: 026738.585 wl0: Broadcom BCM43664 802.11 Wireless Controller 10.10.122.26 (r733804)
+CONSOLE: 026738.585 SPLITRX_MODE_2 enabled : tcmsegsize 160 
+CONSOLE: 026738.585 TCAM: 512 used: 260 exceed:0
+CONSOLE: 026738.586 reclaim section 1: Returned 181492 bytes to the heap
+CONSOLE: 026738.586 ThreadX v5.6 initialized
+CONSOLE: 
+CONSOLE: 026738.829 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026738.829 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+dhd_bus_cmn_writeshared:
+  0000: 00 50 ab 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 80 c4 00 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 60 11 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 40 c4 00 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 00 c5 00 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 00 40 19 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 10 14 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 08 12 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 0c 12 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 00 12 1a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 04 12 1a 00 00 00 00 
+Attach flowrings pool for 264 rings
+Runner DHD PCIE: vendor<0x14e4> device<0x4365> bus<1> slot<0>
+Initial configuration
+=================================
+	rx_post_flow_ring_base_addr : c0c48000
+	tx_post_flow_ring_base_addr : cb5c4000
+	rx_complete_flow_ring_base_addr : c0c50000
+	tx_complete_flow_ring_base_addr : c0c44000
+
+	r2d_wr_arr_base_addr : ffdbc000
+	d2r_rd_arr_base_addr : ffdbc402
+	r2d_rd_arr_base_addr : ffdbcc00
+	d2r_wr_arr_base_addr : ffdbc802
+	tx_post_mgmt_arr_base_addr : ffdbd000
+	tx_post_mgmt_arr_base_phys_addr : 1a121000
+
+	r2d_wr_arr_base_phys_addr : 1a120000
+	d2r_rd_arr_base_phys_addr : 1a120402
+	r2d_rd_arr_base_phys_addr : 1a120c00
+	d2r_wr_arr_base_phys_addr : 1a120802
+
+	Doorbell ISR : bf9a8794
+	Doorbell CTX : daaadc00
+Runner DHD Offload initialization complete
+dhd_rx_frame: net device is NOT registered. drop event packet
+dhd_rx_frame: net device is NOT registered. drop event packet
+CUR_ETHERADDR : 6 
+00 00 00 00 00 01 
+dhd_sync_with_dongle: GET_REVINFO device 0x43c4, vendor 0x14e4, chipnum 0xaa90
+
+Dongle Host Driver, version 7.14.164.23.cpe4.16L05.0-kdb
+wfd_registerdevice Successfully registered dev wl1 ifidx 0 wfd_idx 1
+Broadcom PCI Device 0x6313 has allocated with driver pcieport
+Broadcom PCI Device 0x6313 has allocated with driver pcieport
+dhd_module_init out
+RDPA DS WAN UDP Filter Command Driver
+CONSOLE: 000000.000 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 000000.000 initvars_cis_pci: Not CIS format
+CONSOLE: 000000.000 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 000000.000 ipxotp_read_region: h/w region not programmed
+CONSOLE: 000000.000 Neither SPROM nor OTP has valid image
+CONSOLE: 000000.000 srom rev:0
+CONSOLE: 000000.000 initvars_srom_pci, SROM CRC Error
+CONSOLE: 000000.000 initvars_srom_pci, Using external nvram
+CONSOLE: 000000.000 Setting clocks to 800/400/200
+CONSOLE: 000000.000 si_set_bb_vcofreq_frac: only work on 4360, 4350
+CONSOLE: 000000.000 Enabling D-cache
+CONSOLE: 026738.568 gic_dist_init max_irq 64
+CONSOLE: 026738.570 c_init: Watchdog reset bit set, clearing
+CONSOLE: 026738.570 
+CONSOLE: RTE (PCIE-MSG_BUF) 10.10.122.26 (r733804) on BCM43664 r4 @ 40.0/200.0/800.0MHz
+CONSOLE: 026738.570 nvram_init: called again without calling nvram_exit()
+CONSOLE: 026738.570 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.570 initvars_cis_pci: Not CIS format
+CONSOLE: 026738.570 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.570 ipxotp_read_region: h/w region not programmed
+CONSOLE: 026738.570 Neither SPROM nor OTP has valid image
+CONSOLE: 026738.570 srom rev:0
+CONSOLE: 026738.570 initvars_srom_pci, SROM CRC Error
+CONSOLE: 026738.570 initvars_srom_pci, Using external nvram
+CONSOLE: 026738.570 allocating a max of 511 rxcplid buffers
+CONSOLE: 026738.570 pciemsgbuf0: Broadcom PCIE MSGBUF driver
+CONSOLE: 026738.571 nvram_init: called again without calling nvram_exit()
+CONSOLE: 026738.571 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.571 initvars_cis_pci: Not CIS format
+CONSOLE: 026738.571 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.571 ipxotp_read_region: h/w region not programmed
+CONSOLE: 026738.571 Neither SPROM nor OTP has valid image
+CONSOLE: 026738.571 srom rev:0
+CONSOLE: 026738.571 initvars_srom_pci, SROM CRC Error
+CONSOLE: 026738.571 initvars_srom_pci, Using external nvram
+CONSOLE: 026738.571 wlc_ucode_download: wl0: Loading non-MU ucode
+CONSOLE: 026738.572 reclaim section 0: Returned 216 bytes to the heap
+Creating CPU ring for queue number 2 with 256 packets descriptor=0xbf7bce10
+ Done initializing Ring 2 Base=0xffdce000 End=0xffdcf000 calculated entries= 256 RDD Base=0x00c66000 descriptor=0xbf7bce10
+CONSOLE: 026738.572 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.572 initvars_cis_pci: Not CIS format
+CONSOLE: 026738.573 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.573 ipxotp_read_region: h/w region not programmed
+CONSOLE: 026738.573 Neither SPROM nor OTP has valid image
+CONSOLE: 026738.573 srom rev:0
+CONSOLE: 026738.573 initvars_srom_pci, SROM CRC Error
+CONSOLE: 026738.573 initvars_srom_pci, Using external nvram
+CONSOLE: 026738.573 wlc_bmac_attach, deviceid 0x43c4 nbands 1
+CONSOLE: 026738.581 ipxotp_init: mapping otpbase at 0x18007000 to 0x18007000
+CONSOLE: 026738.581 wl1: wlc_bmac_attach: chiprev 4 corerev 65 cccap 0x58400009 maccap 0xf0018705 band 2.4G, phy_type 11 phy_rev 33
+CONSOLE: 026738.583 wl1: wlc_stf_txcore_shmem_write: No clock
+CONSOLE: 026738.583 wl1: wlc_ampdu_tx_set: AGG Mode = MAC+AQM txmaxpkts 512
+CONSOLE: 026738.585 wl_eventq_dup_event: wl_eventq not initialized
+CONSOLE: 026738.585 wl_eventq_dup_event: wl_eventq not initialized
+CONSOLE: 026738.585 wl1: Broadcom BCM43664 802.11 Wireless Controller 10.10.122.26 (r733804)
+CONSOLE: 026738.585 SPLITRX_MODE_2 enabled : tcmsegsize 160 
+CONSOLE: 026738.585 TCAM: 512 used: 260 exceed:0
+CONSOLE: 026738.585 reclaim section 1: Returned 181492 bytes to the heap
+CONSOLE: 026738.586 ThreadX v5.6 initialized
+CONSOLE: 
+CONSOLE: 026739.057 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026739.057 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+Add UBI volume partitions: name=framework
+Ethernet Auto Power Down and Sleep: Enabled
+Energy Efficient Ethernet: Enabled
+br_netlink_mcpd.c: Setting registration type 0 pid to 959
+CONSOLE: 026758.222 wl0: wl_open
+CONSOLE: 026758.227 reclaim section ucodes: Returned 108592 bytes to the heap
+CONSOLE: 026758.227 wlc_ucode_download: wl0: Loading non-MU ucode
+CONSOLE: 026758.243 wl0: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026758.243 wl0: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026758.259 reclaim section postattach: Returned 115056 bytes to the heap
+CONSOLE: 026758.261 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026758.262 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026757.615 wl1: wl_open
+CONSOLE: 026757.619 reclaim section ucodes: Returned 108592 bytes to the heap
+CONSOLE: 026757.619 wlc_ucode_download: wl1: Loading non-MU ucode
+CONSOLE: 026757.635 wl1: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026757.636 wl1: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026757.651 reclaim section postattach: Returned 115056 bytes to the heap
+CONSOLE: 026757.653 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026757.653 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+mesh: mesh-ng, a routing manipulator.
+mesh:   alper.akcan <alper.akcan@airties.com>
+mesh:   mustafa karaca <mustafa.karaca@airties.com>
+mesh:   serdar ay <serdar.ay@airties.com>
+mesh:   start=-2
+mesh: creating island
+mesh:   backends:
+mesh:     dummy
+mesh:     dijkstra
+mesh:   using: dijkstra
+mesh: creating acceleration
+mesh:   backends:
+mesh:     fap
+mesh:     dummy
+mesh: fap: creating
+mesh: fap: fcache max entries: 16384, blog stats size: 393216
+mesh:   using: fap
+mesh: creating devconf
+mesh: set allowed bridge: BR_LAN
+mesh: creating route
+mesh: creating mcast route
+mesh: creating mesh
+mesh: creating transport
+mesh: creating stree
+mesh:   backends:
+mesh:     kruskal
+mesh:   using: kruskal
+mesh: mesh start mode: no device init
+[dhcpcap_init] module loaded
+CONSOLE: 026760.652 wl1: wl_open
+CONSOLE: 026760.654 wlc_ucode_download: wl1: Loading non-MU ucode
+CONSOLE: 026760.670 wl1: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026760.671 wl1: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026760.683 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026760.683 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026761.504 wl0: wl_open
+CONSOLE: 026761.506 wlc_ucode_download: wl0: Loading non-MU ucode
+CONSOLE: 026761.521 wl0: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026761.522 wl0: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026761.535 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026761.535 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026769.941 wl0: wl_open
+CONSOLE: 026769.144 wl1: wl_open
+00:00:36 Got config file from /etc/telephonyProfiles.d/SWE_profile.xml (len=10542), validating....
+
+00:00:36 tpUpdateLocaleProfile: config file from /etc/telephonyProfiles.d/SWE_profile.xml is OK for country 19
+BOS: Enter bosInit 
+BOS: Exit bosInit 
+******* DSP: Found BCM63138 *******
+******* DSP: In PCM Mode *******
+******* DSP: PCM running in 16 bit mode *******
+gInterruptCounter     = 0xBF642F6C 
+gInterruptErrors      = 0xBF642F70 
+halShimEntryCount     = 0x00000001 
+gDectTestMode           = 0xbf6430b8 
+dectBuffStart           = 0xbf6430a0 
+gDectRxOutOfSyncCounter = 0xbf6430bc 
+gDectTxOutOfSyncCounter = 0xbf6430c0 
+ddrAddrTxV              = 0xbf643044 
+ddrAddrRxV              = 0xbf643048 
+32 ms ECAN tail-length
+*** dmaCtl[0].rx[0].descVirt = 0xFFDE4000
+*** dmaCtl[0].rx[1].descVirt = 0xFFDE4008
+*** dmaCtl[0].tx[0].descVirt = 0xFFDE47D0
+*** dmaCtl[0].tx[1].descVirt = 0xFFDE47D8
+*** buffer size: 640
+*** Ownership for TX desc 1 not set. Use this buffer.
+Binding 0xdfa4c9a0
+[DBG xdrv_slic] slicSi32176Init: (ts: 37s 126ms):SLIC: Starting 32176 device and line initializion...
+[DBG xdrv_slic] deviceSiLabsReset: (ts: 37s 645ms):SLIC: Reset applied on GPIO pin 6
+[DBG xdrv_slic] initSiLabsDevice: (ts: 37s 663ms):SLIC: Initializing SiLabs device 0
+[DBG xdrv_slic] initSiLabsDevice: (ts: 37s 679ms):SLIC: SiLabs device BOM Type: 0
+Si3217x_Init_with_Options(766): size = 1 init_opt = 0
+Si3217x: Channel 0 : Type = PROSLIC
+Si3217x: : Channel 0 : Type = 24
+Si3217x: : Channel 0 : Rev  = 2
+ProSLIC:loading patch: 06182014
+Si3217x: Channel 0 : VBAT Up = 59.85 v
+CONSOLE: 026772.360 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026771.630 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026772.943 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+[DBG xdrv_slic] initSiLabsDevice: (ts: 38s 889ms):SLIC: SiLabs device 0 initialized OK
+CONSOLE: 026772.215 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+[DBG xdrv_slic] initSiLabsLines: (ts: 38s 918ms):SLIC: SiLabs Locale set to 22
+[DBG xdrv_slic] initSiLabsLines: (ts: 38s 943ms):SLIC: Initializing SiLabs FXS line 0
+[DBG xdrv_slic] initSiLabsLines: (ts: 39s 3  ms):FXS channel 0 Rx Gain: -100
+[DBG xdrv_slic] initSiLabsLines: (ts: 39s 21 ms):FXS channel 0 Tx Gain: -40
+ProSLIC:PCMStart
+[DBG xdrv_slic] initSiLabsLines: (ts: 39s 82 ms):SLIC: FXS line 0 RX timeslot = 0 
+[DBG xdrv_slic] initSiLabsLines: (ts: 39s 91 ms):SLIC: FXS line 0 TX timeslot = 0 
+[DBG xdrv_slic] initSiLabsLines: (ts: 39s 122ms):SLIC: SiLabs FXS line 0 initialized OK
+[DBG xdrv_slic] slicSi32176Init: (ts: 39s 146ms):SLIC: 32176 device 0 and FXS initializion COMPLETED OK !
+boardHalInit completed
+DSP: Interrupt Ids
+---------------
+InterruptId      = 148
+EndpointInit completed
+00:00:39 rtpInit: RTCP task created, taskId = -1257589456
+00:00:39  RTCP thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39 Endpoint Event task started with pid 1207...
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39  RTP read thread started with pid 1207 
+
+00:00:39 Endpoint Packet task started with pid 1207 ...
+
+CONSOLE: 026774.857 flow_create : bitmap_size=512  maxitems=512
+CONSOLE: 026774.349 wlc_ucode_download: wl1: Loading non-MU ucode
+CONSOLE: 026774.365 wl1: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026774.366 wl1: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026774.378 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026774.378 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026775.071 wl0: wlc_scan_request_ex, can not scan while driver is down
+CONSOLE: 026775.071 wl0: wlc_scan_request_ex, can not scan due to error -4
+CONSOLE: 026775.155 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026775.592 wl0: wlc_ampdu_tx_set: AGG Mode = MAC+AQM txmaxpkts 512
+CONSOLE: 026775.733 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026775.976 wl0: wl_open
+CONSOLE: 026775.978 wlc_ucode_download: wl0: Loading MU ucode
+CONSOLE: 026775.995 wl0: CORE INIT : nfifo 32 mu_tx_enab 1
+CONSOLE: 026775.995 wl0: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026776.009 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026776.009 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026775.378 wl1: wlc_lq_chanim_update: WLC_CHANIM upd blocked scan/detect
+CONSOLE: 026775.378 wl1: wlc_watchdog: WLC_CHANIM upd fail -25
+dhd_wmf_igs_broadcast: WMF: send failure
+IGMP Query send failed
+CONSOLE: 026776.506 wl0: wl_open
+CONSOLE: 026776.508 wlc_ucode_download: wl0: Loading MU ucode
+CONSOLE: 026776.524 wl0: CORE INIT : nfifo 32 mu_tx_enab 1
+CONSOLE: 026776.525 wl0: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026776.537 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026776.537 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026776.152 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026777.538 wlc_ucode_download: wl0: Loading non-MU ucode
+CONSOLE: 026777.553 wl0: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026777.554 wl0: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026776.877 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026777.572 pciedev_send_ltr:Giving up:0x302
+CONSOLE: 026777.680 wl0: wl_open
+CONSOLE: 026777.682 wlc_ucode_download: wl0: Loading non-MU ucode
+CONSOLE: 026777.698 wl0: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026777.698 wl0: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026777.711 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026777.482 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026777.514 flow_create : bitmap_size=512  maxitems=512
+CONSOLE: 026778.090 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026778.090 flow_create : bitmap_size=512  maxitems=512
+CONSOLE: 026777.725 wl1: wlc_ampdu_tx_set: AGG Mode = MAC+AQM txmaxpkts 512
+CONSOLE: 026777.783 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026777.788 wl1: wlc_stf_txcore_shmem_write: No clock
+dhd_wmf_igs_broadcast: WMF: send failure
+IGMP Query send failed
+CONSOLE: 026777.889 wl1: wl_open
+CONSOLE: 026777.890 wlc_ucode_download: wl1: Loading non-MU ucode
+CONSOLE: 026777.906 wl1: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026777.907 wl1: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026777.919 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026777.920 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026778.053 wl1: wl_open
+CONSOLE: 026778.055 wlc_ucode_download: wl1: Loading non-MU ucode
+CONSOLE: 026778.071 wl1: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026778.071 wl1: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026778.083 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026778.084 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026779.089 pciedev_send_ltr:Giving up:0x302
+CONSOLE: 026778.673 wl1: wl_open
+CONSOLE: 026778.675 wlc_ucode_download: wl1: Loading non-MU ucode
+CONSOLE: 026778.691 wl1: CORE INIT : nfifo 32 mu_tx_enab 0
+CONSOLE: 026778.691 wl1: CORE INIT : mode 2 pktclassify 1 rxsplit 0  hdr conve 0 DMA_CT Enabled
+CONSOLE: 026778.703 wl1: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 026778.886 enable 1: q0 frmcnt 0, wrdcnt 0, q1 frmcnt 0, wrdcnt 0
+CONSOLE: 026778.929 flow_create : bitmap_size=512  maxitems=512
+CONSOLE: 026779.887 pciedev_send_ltr:Giving up:0x302
+CONSOLE: 026782.089 wl0: wlc_lq_chanim_update: WLC_CHANIM upd blocked scan/detect
+CONSOLE: 026782.089 wl0: wlc_watchdog: WLC_CHANIM upd fail -25
+CONSOLE: 026783.089 wl0: wlc_lq_chanim_update: WLC_CHANIM upd blocked scan/detect
+CONSOLE: 026783.089 wl0: wlc_watchdog: WLC_CHANIM upd fail -25
+CONSOLE: 026784.089 wl0: wlc_lq_chanim_update: WLC_CHANIM upd blocked scan/detect
+CONSOLE: 026784.089 wl0: wlc_watchdog: WLC_CHANIM upd fail -25
+CONSOLE: 026785.089 wl0: wlc_lq_chanim_update: WLC_CHANIM upd blocked scan/detect
+CONSOLE: 026785.089 wl0: wlc_watchdog: WLC_CHANIM upd fail -25
+CONSOLE: 026786.109 CAC Started on Channel 100/80
+CONSOLE: 026785.886 wl1: wlc_lq_chanim_update: WLC_CHANIM upd blocked scan/detect
+CONSOLE: 026785.886 wl1: wlc_watchdog: WLC_CHANIM upd fail -25
+CONSOLE: 026786.773 wl1: wlc_ht_send_action_obss_coex: Not STA
